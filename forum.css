@@ -1,0 +1,196 @@
+.forum-form,
+.forum-kartu {
+    margin: 22px 0;
+    padding: 26px;
+    border: 1px solid #e5ebf5;
+    border-radius: 20px;
+    background: white;
+    overflow-wrap: anywhere;
+    animation: kartuMasuk 0.45s ease-out both;
+}
+
+.forum-form {
+    background: #f9fbff;
+}
+
+.forum-form h2,
+.forum-kartu h2,
+.forum-kartu h3 {
+    margin-top: 0;
+}
+
+.forum-kartu {
+    transition:
+        border-color 0.2s,
+        box-shadow 0.2s;
+}
+
+.forum-kartu:hover {
+    border-color: #d4def5;
+    box-shadow: 0 8px 24px rgba(28, 48, 92, 0.04);
+}
+
+.forum-kartu h3 {
+    color: #253858;
+    font-size: 19px;
+}
+
+.forum-form textarea {
+    width: 100%;
+    margin-top: 6px;
+    padding: 14px 16px;
+    border: 1px solid #d7e0ee;
+    border-radius: 12px;
+    background: white;
+    color: #18243b;
+    font: inherit;
+    font-size: 14px;
+    line-height: 1.8;
+    resize: vertical;
+}
+
+.forum-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 9px;
+    color: #69758b;
+    font-size: 12px;
+}
+
+.forum-meta strong {
+    color: #36445d;
+    font-size: 13px;
+}
+
+.forum-peran {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 7px;
+    background: #f0f2f7;
+    color: #63708a;
+    font-size: 11px;
+    font-weight: 650;
+}
+
+.forum-peran.pengajar {
+    background: #eaf0ff;
+    color: #3459e6;
+}
+
+.forum-isi {
+    margin-top: 20px;
+    padding-top: 18px;
+    border-top: 1px solid #edf1f7;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    color: #36445d;
+    line-height: 1.9;
+    font-size: 14px;
+}
+
+.forum-ringkasan {
+    margin-top: 18px;
+    color: #69758b;
+    white-space: pre-wrap;
+    line-height: 1.85;
+    font-size: 14px;
+}
+
+.forum-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px;
+    margin-top: 10px;
+    border: 1px solid #dfe7ff;
+    border-radius: 11px;
+    background: #edf2ff;
+    color: #3459e6;
+    font-size: 13px;
+    font-weight: 650;
+    text-decoration: none;
+    transition:
+        background 0.2s,
+        color 0.2s,
+        transform 0.2s;
+}
+
+.forum-link::after {
+    content: "→";
+    transition: transform 0.2s;
+}
+
+.forum-link:hover {
+    background: #3459e6;
+    border-color: #3459e6;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.forum-link:hover::after {
+    transform: translateX(3px);
+}
+
+.forum-sukses {
+    padding: 15px 18px;
+    border: 1px solid #cfeadd;
+    border-radius: 13px;
+    background: #effaf4;
+    color: #26734f;
+    font-size: 14px;
+}
+
+.forum-hapus {
+    background: #fff1f2;
+    color: #ad3447;
+    border: 1px solid #f4d5db;
+    font-size: 12px;
+    padding: 9px 14px;
+}
+
+.forum-hapus:hover {
+    background: #ffe4e9;
+    color: #922638;
+    box-shadow: none;
+}
+
+.forum-balasan-pengajar {
+    border-left: 4px solid #5c7aeb;
+    background: #fbfcff;
+}
+
+.forum-aksi {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #edf1f7;
+}
+
+.forum-aksi button {
+    margin-top: 0;
+}
+
+@media (max-width: 700px) {
+    .forum-form,
+    .forum-kartu {
+        padding: 21px 16px;
+        border-radius: 16px;
+    }
+
+    .forum-kartu h3 {
+        font-size: 17px;
+    }
+
+    .forum-meta {
+        gap: 7px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
